@@ -1,0 +1,14 @@
+<!-- ocr/templates/ocr/result.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extracted Text</title>
+</head>
+<body>
+    <h1>Extracted Text from Image</h1>
+    <p>Uploaded File: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+    <p>Extracted Text:</p>
+    <pre>{{ extracted_text }}</pre>
+    <a href="{% url 'upload_image' %}">Upload Another Image</a>
+</body>
+</html>
